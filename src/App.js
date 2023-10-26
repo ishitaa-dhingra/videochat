@@ -4,7 +4,7 @@ import Home from "./Home";
 import Room from "./Room";
 function App() {
   return (
-    <div className="App">
+    <div>
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/room/:roomID" element={<Room />} />
