@@ -4,8 +4,8 @@ import { useParams } from "react-router-dom";
 const Room = () => {
   const { roomID } = useParams();
   let meeting = async (element) => {
-    const appID = 329639491;
-    const serverSecret = "95e8fd9d8eae26cfd439cb0b4c2d48c7";
+    const appID = 2032128404;
+    const serverSecret = "9be98ee2bf829ccfc88cdfcfdf33fa3a";
 
     const kitToken = ZegoUIKitPrebuilt.generateKitTokenForTest(
       appID,
@@ -20,7 +20,7 @@ const Room = () => {
     zp.joinRoom({
       container: element,
       scenario: {
-        mode: ZegoUIKitPrebuilt.GroupCall, // To implement 1-on-1 calls, modify the parameter here to [ZegoUIKitPrebuilt.OneONoneCall].
+        mode: ZegoUIKitPrebuilt.GroupCall,
       },
     });
   };
