@@ -23,7 +23,11 @@ const Home = () => {
       <div className="relative  h-screen">
         {/*Image*/}
         <div className="absolute h-[34rem] w-full flex overflow-hidden">
-          <img src={conference} className="object-cover w-full h-full"></img>
+          <img
+            src={conference}
+            className="object-cover w-full h-full"
+            alt="conference"
+          ></img>
         </div>
         <div className="absolute h-full w-full flex overflow-hidden bg-black/60"></div>
         {/*Hero Info*/}
